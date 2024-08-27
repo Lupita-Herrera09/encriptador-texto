@@ -1,12 +1,51 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+
+<body class="body">
+  
+    <div id="header" style="display: flex;">
+        <div id="logo">
+            <img src="/img/Logo.png">
+        </div>
+        <h2>Encriptador de texto</h2>
+    </div>
+    <div id="body">
+        <div id="texto_entrada" style="display: block;">
+            <div style="margin:0px 15px; padding-top: 40px;;">
+                <h3 style="margin:auto">Ingrese el texto aqui</h2>
+                    <textarea
+                        id="area" rows="15" class="area"></textarea>
+                    <label>Solo letras minúsculas y sin acentos</label>
+                    <div class="div__botones">
+                        <button name="button" id="boton__1" class="boton__1" onclick="encriptar()">Encriptar</button>
+                        <button name="button" id="boton__2" class="boton__2" onclick="desencriptar()">Desencriptar
+                        </button>
+                    </div>
+            </div>
+        </div>
+        <div id="texto_salida">
+            <div id="img_sin_mensaje">
+                <img src="/img/Muñeco.png">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div id="respuesta">
+                <p id="area__final" class="area_final"></p>
+                <button name="button" id="boton__3" class="boton__3" onclick="copiar()">Copiar </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="encriptador.js">
+
+    </script>
 </body>
+
 </html>
